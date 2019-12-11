@@ -1,0 +1,15 @@
+.chores {
+    font-family: "Lucida Console";
+    font-size: 20px;
+    color: green;
+    
+}
+
+.chores h3 {
+    text-decoration: underline;
+}
+
+.chores ul {
+    font-style: italic;
+}
+
