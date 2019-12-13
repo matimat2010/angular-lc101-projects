@@ -1,14 +1,20 @@
-<div class="chores">
+<div class="chores" *ngIf ="chores.length == 0 || finishedChores.length > 2; else hashTag" >
     <h3>Chores</h3>
     <ul>
         <li *ngFor = 'let chore of chores'>{{chore}}</li>
     </ul>
+    <p style="color:aquamarine">Work Harder!</p>
 </div>
 <hr>
 <div class="doneChores">
     <h3>Done Chores</h3>
+    <img src="{{trophyImage}}">
     <ul>
         <li *ngFor = 'let done of finishedChores'>{{done}}</li>
     </ul>
 </div>
 <hr>
+
+<ng-template #hashTag>
+<p>No allowance yet</p>
+</ng-template>
